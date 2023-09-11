@@ -1,0 +1,26 @@
+.title-page {
+    text-align: center;
+}
+
+.element-title {
+    text-align: center;
+    color: rebeccapurple;
+}
+
+.item-code {
+    font-family: monospace;
+    background-color: blanchedalmond;
+}
+
+table {
+    border: 2px solid darkorchid;
+    margin: 0 auto;
+}
+
+thead {
+    background-color: plum;
+}
+
+td {
+    border-top: 1px solid darkorchid;
+}

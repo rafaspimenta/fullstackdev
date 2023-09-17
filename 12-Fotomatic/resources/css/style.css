@@ -1,18 +1,27 @@
 /* Universal Styles */
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
+body {
+  margin: 0;
+}
+
 .main-content {
   position: relative;
   top: 5.3125rem;
+  
   /* To offset for fixed header. */
 }
 
 .center {
   text-align: center;
+  padding: 5rem 0;
 }
 
 .button {
@@ -27,6 +36,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -41,43 +51,51 @@ header {
   position: fixed;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
-  background-color: white;
+  background-color: white;  
+  height: 85px;
 }
 
 header .content {
   display: flex;
-  align-items: center;
+  padding: 1.875rem;
+  align-items: center;  
   padding: 1.875rem;
 }
 
 header .logo {
   flex: 1;
+  font-size: 1.5rem;
+  color: #4A4A4A;  
 }
 
 header nav ul {
   display: flex;
+  list-style-type: none;
 }
 
 nav li {
-  padding-left: 3.5rem;
+  padding-left: 3.5rem;  
 }
 
 nav a {
+  text-decoration: none;
   vertical-align: bottom;
   line-height: 1.6;
   font-size: 1rem;
-  color: #4a4a4a;
+  color: #4A4A4A;  
 }
 
 header .icon {
-  width: 1rem;
+  width: 2rem;
   padding-left: .75rem;
+  opacity: 0.8;
 }
 
 header .mobile {
   display: none;
 }
 
+/* mobile */
 @media only screen and (max-width: 760px) {
   header .desktop {
     display: none;
@@ -116,15 +134,20 @@ header .mobile {
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 43.5rem;
+  background-image: url(./../images/banner-landingpage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
-  background-color: #9dc20b;
+  background-color: #9dc20b;  
+  margin: 0 100px;
 }
 
 #sign-up-cta .content {
@@ -267,6 +290,14 @@ header .mobile {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
   }
+
+  .feature .center {
+    padding: 0;
+  }
+
+  .feature .content {
+    padding: 1.25rem 0 1.875rem 0;
+  }
 }
 
 /* Filters Section */
@@ -295,6 +326,7 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
 }
@@ -339,7 +371,7 @@ header .mobile {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -357,7 +389,7 @@ header .mobile {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
@@ -374,6 +406,7 @@ header .mobile {
 footer {
   background-color: #9b9b9b;
   padding: 1.5rem 2rem;
+  height: 3.875rem;
 }
 
 footer .content {
@@ -386,7 +419,7 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 760px) {  
   footer .content {
     font-size: .625rem;
   }

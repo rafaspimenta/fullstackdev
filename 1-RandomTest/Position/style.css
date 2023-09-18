@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: lightcoral;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.item1 {
+    background-color: cyan;
+}
+
+.item2 {
+    background-color: yellow;
+    position: absolute;
+    opacity: 0.9;
+    top: 50px;
+    left: 50px;
+}

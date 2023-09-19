@@ -1,0 +1,121 @@
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --gap: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 50%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lexend Mega", sans-serif;
+    font-size: 2rem;
+    color: var(--primiry-color);
+    opacity: 0.9;
+}
+
+h1 {
+    font-size: 6rem;
+    padding-bottom: 3rem;
+}
+
+h2 {
+    font-size: 4rem;
+    padding: 1rem 0;
+}
+
+h4 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+h5 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.main-content {
+    margin: 0 auto;
+    padding: var(--gap) 0;
+    text-align: center;
+}
+
+.section {
+    height: 30rem;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu ul li {
+    justify-content: end;
+}
+
+#mission-statement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("./assets/img/skyscrapers.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mission-statement .content {
+    background: white;
+}
+  
+.img-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--gap);
+    padding: 3rem 0;
+}
+
+.item p 
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.item img {
+    height: auto;
+    width: 200px;
+}
+
+#portifolio .img-content {
+    justify-content: space-around;
+}
+
+#portifolio .item {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+#investiment-team .img-content {
+    justify-content: center;
+    background-image: url("./assets/img/skyscrapers.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--secondary-color);
+}
+
+#investiment-team .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    max-width: 30rem;
+}

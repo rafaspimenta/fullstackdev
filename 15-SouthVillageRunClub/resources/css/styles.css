@@ -1,0 +1,95 @@
+:root {
+    --primary-color: yellow;
+    --secondary-color: lightsalmon;
+    --paragraph-color: white;
+    --primary-bg-color: lightsalmon;
+    --secondary-bg-color: teal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primiry-color);
+    line-height: 1.5;
+    background-color: var(--primary-bg-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    text-align: center;
+    padding: 2rem 0;
+    min-height: 20rem;
+}
+
+.bar {
+    background-color: var(--secondary-bg-color);
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+.bar ul {    
+    display: flex;
+    list-style-type: none;    
+}
+.bar a {
+    color: var(--secondary-color);    
+    padding: 0.5rem 1.5rem;
+}
+
+
+.intro {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro h1 {
+    background-color: rgb(148, 90, 84);
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.summary h1 {
+    color: var(--primary-color);
+}
+
+.summary p {
+    color: var(--paragraph-color);
+}
+
+.photos img {
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+    padding: 1rem;
+}
+
+.testimonial {
+    color: var(--primary-color);
+    background-color: var(--secondary-bg-color);
+}
+
+.meetup {
+    color: var(--primary-color);
+}
+
+.meetup img {
+    width: 100%;
+    height: auto;
+    max-width: 540px;
+    padding: 1rem;
+}
+
+

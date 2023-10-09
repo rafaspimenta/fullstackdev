@@ -1,0 +1,13 @@
+{
+  "name": "spress-tests",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon -L server.js"
+  },
+  "author": "rafaspimenta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

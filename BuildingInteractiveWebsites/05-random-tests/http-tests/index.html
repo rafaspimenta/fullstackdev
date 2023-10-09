@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <p>My favority language to study is: <span id="language"></span></p>
+            <button type="button" onclick="selectLanguage()">Pick up a language</button>
+        </div>
+    </div>
+</body>
+<script>
+    const selectLanguage = () => {
+        const languages = ['java', 'c#', 'javascript', 'python', 'cobol', 'ruby'];
+
+        let random = Math.floor(Math.random() * 6);
+
+        const languageElement = document.getElementById('language');
+        languageElement.innerHTML = languages[random] + ' ' + random;
+    }
+</script>
+</html>
